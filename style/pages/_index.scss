@@ -1,4 +1,9 @@
 #index {
+    .video-container + .ui.text.container {
+        position: inherit;
+        z-index : 200;
+    }
+
     .masthead {
         &.segment {
             //min-height: 400px;
