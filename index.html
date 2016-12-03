@@ -10,7 +10,7 @@
         <!-- @javascript jquery.min semantic -->
     </head>
 
-    <body>
+    <body id="index">
         <div class="ui inverted vertical masthead segment">
             <div class="ui text container">
                 <h1 class="ui inverted header">
@@ -23,9 +23,14 @@
             </div>
 
         </div>
-        <div class="ui container">
-            <div class="ui embed" data-url="https://calendar.google.com/calendar/embed?showTitle=0&showNav=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&mode=AGENDA&height=600&wkst=2&bgcolor=%23FFFFFF&src=c5hjb2jkko0ksagbip0m2sl9ho%40group.calendar.google.com&color=%23B1365F&ctz=Europe%2FLuxembourg"
-                data-placeholder="" data-icon="calendar">
+        <div class="ui vertical stripe segment">
+            <div class="ui text container">
+                <div class="ui message">
+                    <i class="close icon"></i>
+                    <i class="sort icon"></i>Scroll for loading more content. <i class="hand pointer icon"></i>Click or tap to expand.
+                </div>
+                <div class="ui embed" data-url="https://calendar.google.com/calendar/embed?showTitle=0&showNav=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&mode=AGENDA&height=600&wkst=2&bgcolor=%23FFFFFF&src=c5hjb2jkko0ksagbip0m2sl9ho%40group.calendar.google.com&color=%23B1365F&ctz=Europe%2FLuxembourg" data-placeholder="" data-icon="calendar">
+                </div>
             </div>
         </div>
 
@@ -34,14 +39,42 @@
             $(document)
                 .ready(function()
                 {
-                    // create sidebar and attach to menu open
-                    var $input = $('.action.input'),
-                        toogled = false;
                     $('.ui.embed').embed();
+                    $('.message .close')
+                        .on('click', function()
+                        {
+                            $(this)
+                                .closest('.message')
+                                .transition('fade');
+                        });
                 });
 
         </script>
-        <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');}})()</script>
+        <script>
+            (function()
+            {
+                var qs, js, q, s, d = document,
+                    gi = d.getElementById,
+                    ce = d.createElement,
+                    gt = d.getElementsByTagName,
+                    id = 'typef_orm',
+                    b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+                if (!gi.call(d, id))
+                {
+                    js = ce.call(d, 'script');
+                    js.id = id;
+                    js.src = b + 'share.js';
+                    q = gt.call(d, 'script')[0];
+                    q.parentNode.insertBefore(js, q)
+                }
+                id = id + '_';
+                if (!gi.call(d, id))
+                {
+                    qs = ce.call(d, 'link');
+                }
+            })()
+
+        </script>
     </body>
 
 </html>
