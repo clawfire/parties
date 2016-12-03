@@ -1,0 +1,30 @@
+.masthead {
+    &.segment {
+        min-height: 25vh;
+        padding   : 1em 0;
+    }
+
+    .container {
+        margin-bottom: 4em;
+    }
+
+    .logo.item img {
+        margin-right: 1em;
+    }
+
+    .ui.menu .ui.button {
+        margin-left: .5em;
+    }
+
+    h1.ui.header {
+        margin-top   : 1em;
+        margin-bottom: 0;
+        font-size    : 4em;
+        font-weight  : normal;
+    }
+
+    h2 {
+        font-size  : 1.7em;
+        font-weight: normal;
+    }
+}
