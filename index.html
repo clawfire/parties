@@ -1,64 +1,61 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <!-- @reload -->
-        <meta charset="utf-8">
-        <title>Title</title>
-        <!-- @include app_header -->
-        <!-- @stylesheet semantic app -->
-        <!-- @javascript jquery.min semantic -->
-    </head>
+<head>
+    <!-- @reload -->
+    <meta charset="utf-8">
+    <title>Soirées LGBT au Luxembourg et en Grande Région</title>
+    <!-- @include app_header -->
+    <!-- @stylesheet semantic.min app -->
+    <!-- @javascript jquery.min semantic.min -->
+</head>
 
-    <body id="index">
-        <div class="ui inverted vertical masthead segment">
-            <div class="video-container">
-                <div class="filter"></div>
-                <video autoplay loop class="fillWidth" poster="<!-- @path Cheer-Up.jpg -->">
+<body id="index">
+    <div class="ui inverted vertical masthead segment">
+        <div class="video-container">
+            <div class="filter"></div>
+            <video autoplay loop class="fillWidth" poster="<!-- @path Cheer-Up.jpg -->">
                     <source src="<!-- @path Cheer-Up.mp4 -->" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
                     <source src="<!-- @path Cheer-Up.webm -->" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
                 </video>
-            </div>
-            <div class="ui text container">
-                <h1 class="ui inverted header">
+        </div>
+        <div class="ui text container">
+            <h1 class="ui inverted header">
                     Gay parties in Luxembourg
                 </h1>
-                <p>Discover the agenda of all LGBT, gay, lesbian, bears, fetish, twink, ... parties in &nbsp;<i class="lu flag"></i>Luxembourg and all the greater Region ( <i class="fr flag"></i>Lorraine, <i class="be flag"></i>Belgium and &nbsp;<i class="de flag"></i>Saarland).</p>
-                <p>You are a party organiser or you just know some parties that are not already here ? Feel free to add it in a minute. It's free and will help party organiser to make their agenda to offer a better organised nightlife in Luxembourg.</p>
-                <!-- @todo Put this somewhere more appropriate -->
-                <a class="typeform-share ui huge button primary" href="https://thibault.typeform.com/to/Jdh49S" data-mode="2" target="_blank">Submit yours</a>
-            </div>
-
-        </div>
-        <div class="ui vertical stripe segment">
-            <div class="ui text container">
-                <div class="ui message">
-                    <i class="close icon"></i>
-                    <i class="sort icon"></i>Scroll for loading more content. <i class="hand pointer icon"></i>Click or tap to expand.
-                </div>
-                <div class="ui embed" data-url="https://calendar.google.com/calendar/embed?showTitle=0&showNav=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&mode=AGENDA&height=600&wkst=2&bgcolor=%23FFFFFF&src=c5hjb2jkko0ksagbip0m2sl9ho%40group.calendar.google.com&color=%23B1365F&ctz=Europe%2FLuxembourg"
-                    data-placeholder="" data-icon="calendar">
-                </div>
-            </div>
+            <p>Discover the agenda of all LGBT, gay, lesbian, bears, fetish, twink, ... parties in &nbsp;<i class="lu flag"></i>Luxembourg and all the greater Region ( <i class="fr flag"></i>Lorraine, <i class="be flag"></i>Belgium and &nbsp;<i class="de flag"></i>Saarland).</p>
+            <p>You are a party organiser or you just know some parties that are not already here ? Feel free to add it in a minute. It's free and will help party organiser to make their agenda to offer a better organised nightlife in Luxembourg.</p>
+            <!-- @todo Put this somewhere more appropriate -->
+            <a class="typeform-share ui huge button primary" href="https://thibault.typeform.com/to/Jdh49S" data-mode="2" target="_blank">Submit yours</a>
         </div>
 
+    </div>
+    <div class="ui vertical stripe segment">
+        <div class="ui text container">
+            <div class="ui message">
+                <i class="close icon"></i>
+                <i class="sort icon"></i>Scroll for loading more content. <i class="hand pointer icon"></i>Click or tap to expand.
+            </div>
+            <div class="ui embed" data-url="https://calendar.google.com/calendar/embed?showTitle=0&showNav=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&mode=AGENDA&height=600&wkst=2&bgcolor=%23FFFFFF&src=c5hjb2jkko0ksagbip0m2sl9ho%40group.calendar.google.com&color=%23B1365F&ctz=Europe%2FLuxembourg"
+                data-placeholder="" data-icon="calendar">
+        </div>
+    </div>
+    </div>
 
-        <script type="text/javascript">
-            $(document)
-                .ready(function()
-                {
-                    $('.ui.embed').embed();
-                    $('.message .close')
-                        .on('click', function()
-                        {
-                            $(this)
-                                .closest('.message')
-                                .transition('fade');
-                        });
-                });
 
-        </script>
-        <!-- @javascript typeform background_video -->
-    </body>
+    <script type="text/javascript">
+        $(document)
+            .ready(function() {
+                $('.ui.embed').embed();
+                $('.message .close')
+                    .on('click', function() {
+                        $(this)
+                            .closest('.message')
+                            .transition('fade');
+                    });
+            });
+    </script>
+    <!-- @javascript typeform background_video -->
+</body>
 
 </html>

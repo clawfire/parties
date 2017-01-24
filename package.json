@@ -1,0 +1,23 @@
+{
+  "name": "parties",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/Build/index.html",
+  "dependencies": {
+    "semantic-ui-css": "^2.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clawfire/parties.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clawfire/parties/issues"
+  },
+  "homepage": "https://github.com/clawfire/parties#readme"
+}
